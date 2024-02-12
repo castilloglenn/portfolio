@@ -2,6 +2,8 @@
 
 ## Project deployment
 ```
+clone the castilloglenn.github.io first
+update the $repo_path of deploy.sh to the path of it
 npm run deploy "<commit-message>"
 ```
 
