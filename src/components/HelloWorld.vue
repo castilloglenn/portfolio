@@ -1,8 +1,14 @@
 <template>
   <div>
-    <div class="hello">Pulling check</div>
-    <p>{{ msg }}</p>
-    <p>{{ sample }}</p>
+    <h1>Welcome! the newly designed portfolio is currently in progress.</h1>
+    <p>
+      For the mean time, you can check out my LinkedIn profile to know more
+      about me.
+    </p>
+    <a href="https://www.linkedin.com/in/allen-glenn-castillo/" target="_blank">
+      Allen Glenn E. Castillo
+    </a>
+    <p>Thank you!</p>
   </div>
 </template>
 
