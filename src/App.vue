@@ -1,14 +1,7 @@
 <template>
   <v-app>
-    <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-    <v-navigation-drawer v-model="drawer" fixed temporary>
-      <!-- -->
-    </v-navigation-drawer>
-
     <v-main>
-      <v-container>
-        <router-view />
-      </v-container>
+      <router-view />
     </v-main>
   </v-app>
 </template>
