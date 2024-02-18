@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <navigation-drawer />
     <v-main>
       <router-view />
     </v-main>
@@ -9,11 +10,12 @@
 <script lang="ts">
 import Vue from "vue";
 
+import NavigationDrawer from "@/components/NavigationDrawer.vue";
+
 export default Vue.extend({
   name: "App",
-
-  data: () => ({
-    drawer: false,
-  }),
+  components: {
+    NavigationDrawer,
+  },
 });
 </script>
