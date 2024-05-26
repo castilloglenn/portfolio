@@ -1,10 +1,10 @@
 <template>
-  <div class="modal">
-    <p class="headline">Hi, I'm Glenn!</p>
-    <p class="subtitle">
-      Website is currently in progress, please <br />
-      visit my <a :href="data">LinkedIn</a> to know more about me.
-    </p>
+  <div>
+    <p class="a">System.out.println("Hello world");</p>
+    <p class="b">System.out.println("Hello world");</p>
+    <p class="c">System.out.println("Hello world");</p>
+    <p class="d">System.out.println("Hello world");</p>
+    <p class="e">System.out.println("Hello world");</p>
   </div>
 </template>
 
@@ -19,4 +19,25 @@ export default {
 };
 </script>
 
-<style scoped />
+<style scoped lang="scss">
+.a {
+  font-family: "Switzer-Black";
+  font-size: 24px;
+}
+.b {
+  font-family: "SpaceMono-Regular";
+  font-size: 24px;
+}
+.c {
+  font-family: "SpaceMono-Bold";
+  font-size: 24px;
+}
+.d {
+  font-family: "SpaceMono-Italic";
+  font-size: 24px;
+}
+.e {
+  font-family: "SpaceMono-BoldItalic";
+  font-size: 24px;
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div id="app" :class="themeClass">
+  <div id="app">
     <main>
       <router-view />
     </main>
@@ -22,7 +22,24 @@ export default Vue.extend({
       return `theme-${this.theme}`;
     },
   },
+  mounted() {
+    document.body.classList.add(this.themeClass);
+  },
+  beforeDestroy() {
+    document.body.classList.remove(this.themeClass);
+  },
+  watch: {
+    themeClass(newClass, oldClass) {
+      document.body.classList.remove(oldClass);
+      document.body.classList.add(newClass);
+    },
+  },
 });
 </script>
 
-<style />
+<style scoped lang="scss">
+#app {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+</style>
