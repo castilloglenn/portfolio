@@ -1,7 +1,7 @@
 import { CommonState } from "./types";
 
 const state: CommonState = {
-  test: "test",
+  theme: "dark",
 };
 
 export default state;

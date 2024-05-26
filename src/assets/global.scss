@@ -5,6 +5,40 @@
   font-style: normal;
 }
 
+$light-theme: (
+  background-color: #ffffff,
+  text-color: #000000,
+  headline-color: #333333,
+  subtitle-color: #555555
+);
+
+$dark-theme: (
+  background-color: #121212,
+  text-color: #e0e0e0,
+  headline-color: #ffffff,
+  subtitle-color: #bbbbbb
+);
+
+$custom-theme: (
+  background-color: #f5f5dc,
+  text-color: #00008b,
+  headline-color: #8b0000,
+  subtitle-color: #2e8b57
+);
+
+@mixin apply-theme($theme) {
+  background-color: map-get($theme, background-color);
+  color: map-get($theme, text-color);
+
+  .headline {
+    color: map-get($theme, headline-color);
+  }
+
+  .subtitle {
+    color: map-get($theme, subtitle-color);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,12 +53,24 @@
 }
 
 .headline {
-  font-family: "Switzer-Black";
+  font-family: 'Switzer-Black';
   font-size: 96px;
 }
 
 .subtitle {
-  font-family: "Switzer-Regular";
+  font-family: 'Switzer-Regular';
   font-size: 24px;
   text-align: center;
+}
+
+.theme-light {
+  @include apply-theme($light-theme);
+}
+
+.theme-dark {
+  @include apply-theme($dark-theme);
+}
+
+.theme-custom {
+  @include apply-theme($custom-theme);
 }

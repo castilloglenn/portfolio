@@ -3,7 +3,7 @@
     <p class="headline">Hi, I'm Glenn!</p>
     <p class="subtitle">
       Website is currently in progress, please <br />
-      visit my <a :href="data">LinkedIn</a> to know more about me
+      visit my <a :href="data">LinkedIn</a> to know more about me.
     </p>
   </div>
 </template>

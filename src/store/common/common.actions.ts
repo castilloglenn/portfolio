@@ -1,5 +1,5 @@
 import { Context } from "../types";
 
-export const setTest = (context: Context, test: string) => {
-  context.commit("setTest", test);
+export const setTheme = (context: Context, theme: string) => {
+  context.commit("setTheme", theme);
 };

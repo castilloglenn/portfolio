@@ -1,3 +1,3 @@
 export interface CommonState {
-  test: string;
+  theme: string;
 }

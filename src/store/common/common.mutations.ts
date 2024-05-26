@@ -1,5 +1,5 @@
 import { CommonState } from "./types";
 
-export const setTest = (state: CommonState, test: string) => {
-  state.test = test;
+export const setTheme = (state: CommonState, theme: string) => {
+  state.theme = theme;
 };
