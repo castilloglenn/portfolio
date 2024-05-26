@@ -19,23 +19,4 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-.modal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.headline {
-  font-family: "Switzer-Black";
-  font-size: 96px;
-}
-
-.subtitle {
-  font-family: "Switzer-Regular";
-  font-size: 24px;
-  text-align: center;
-}
-</style>
+<style scoped />
