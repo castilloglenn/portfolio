@@ -1,21 +1,18 @@
 <template>
-  <v-app>
-    <navigation-drawer />
-    <v-main>
+  <div id="app">
+    <main>
       <router-view />
-    </v-main>
-  </v-app>
+    </main>
+  </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 
-import NavigationDrawer from "@/components/NavigationDrawer.vue";
-
 export default Vue.extend({
   name: "App",
-  components: {
-    NavigationDrawer,
-  },
+  components: {},
 });
 </script>
+
+<style />
