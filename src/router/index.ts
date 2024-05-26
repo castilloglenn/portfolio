@@ -3,6 +3,8 @@ import VueRouter, { RouteConfig } from "vue-router";
 
 import LandingPage from "@/views/Landing/LandingPage.vue";
 
+import * as constants from "@/router/constants";
+
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
@@ -16,6 +18,14 @@ const routes: Array<RouteConfig> = [
 const router = new VueRouter({
   mode: "history",
   routes,
+});
+
+router.beforeEach((to, from, next) => {
+  const location = to.meta && to.meta.title ? to.meta.title : null;
+  document.title = location
+    ? `${location} ${constants.DIVIDER} ${constants.BASE_TITLE}`
+    : constants.BASE_TITLE;
+  next();
 });
 
 export default router;
